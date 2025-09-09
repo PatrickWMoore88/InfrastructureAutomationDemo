@@ -7,13 +7,11 @@ This project provisions a modular AWS infrastructure using Terraform. It include
 - 🗃️ S3 bucket with secure ACL configuration
 - 🔐 SSH key integration for EC2 access
 - 📤 Output variables for easy integration
-- 🐳 Dockerized for portability and demo-readiness
 
 🧰 Prerequisites
 - Terraform v1.3+
 - AWS CLI configured with credentials
 - Existing AWS key pair for EC2 access
-- Docker (optional, for containerized execution)
 
 📁 Project Structure
 infra-demo/
@@ -25,7 +23,6 @@ infra-demo/
 │   ├── vpc/
 │   ├── ec2/
 │   └── s3/
-├── Dockerfile
 ├── README.md
 
 
@@ -48,17 +45,6 @@ terraform apply
 
 3. View Outputs
 terraform output
-
-
-
-🐳 Dockerized Execution
-Build the Image
-docker build -t infra-demo .
-
-
-Run the Container
-docker run -it infra-demo
-
 
 
 🧠 Modules Overview
